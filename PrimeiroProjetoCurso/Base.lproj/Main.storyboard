@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PrimeiroProjetoCurso" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKp-ve-K1f">
+                                <rect key="frame" x="25" y="79" width="380" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome aqui" minimumFontSize="17" background="powersleep" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aQ1-Bf-ZDl">
+                                <rect key="frame" x="25" y="137.66666666666666" width="380" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" minimumFontSize="17" background="powersleep" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PQj-8f-lh8">
+                                <rect key="frame" x="25" y="196.66666666666666" width="380" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PwS-Bo-oqh">
+                                <rect key="frame" x="25" y="320.66666666666669" width="380" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="PwS-Bo-oqh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="9e1-ao-sNI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PwS-Bo-oqh" secondAttribute="trailing" constant="25" id="K64-WS-42s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PQj-8f-lh8" secondAttribute="trailing" constant="25" id="LTZ-KQ-VkS"/>
+                            <constraint firstItem="aQ1-Bf-ZDl" firstAttribute="top" secondItem="kKp-ve-K1f" secondAttribute="bottom" constant="25" id="OQL-md-b4c"/>
+                            <constraint firstItem="PwS-Bo-oqh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Q8u-xJ-5xe"/>
+                            <constraint firstItem="PQj-8f-lh8" firstAttribute="top" secondItem="aQ1-Bf-ZDl" secondAttribute="bottom" constant="25" id="RWE-SK-3ce"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PwS-Bo-oqh" secondAttribute="trailing" constant="25" id="UWZ-h8-3WE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aQ1-Bf-ZDl" secondAttribute="trailing" constant="25" id="W51-vK-uXO"/>
+                            <constraint firstItem="kKp-ve-K1f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="WmE-Od-ugE"/>
+                            <constraint firstItem="aQ1-Bf-ZDl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="cTi-QO-2z3"/>
+                            <constraint firstItem="kKp-ve-K1f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ewj-BG-bUi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PwS-Bo-oqh" secondAttribute="trailing" constant="25" id="kZm-HK-Ell"/>
+                            <constraint firstItem="PwS-Bo-oqh" firstAttribute="top" secondItem="PQj-8f-lh8" secondAttribute="bottom" constant="90" id="mIR-uQ-awb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kKp-ve-K1f" secondAttribute="trailing" constant="25" id="qFj-oB-iWy"/>
+                            <constraint firstItem="PQj-8f-lh8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="rAt-Yy-6T5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonLoginButton" destination="PwS-Bo-oqh" id="5up-UH-qgm"/>
+                        <outlet property="loguinLabel" destination="kKp-ve-K1f" id="tCV-mh-RKu"/>
+                        <outlet property="nameUserLabel" destination="aQ1-Bf-ZDl" id="0fo-bl-pGn"/>
+                        <outlet property="passwordUserLabel" destination="PQj-8f-lh8" id="afm-PJ-Xmk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4476" y="-1288"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="powersleep" catalog="system" width="125" height="128"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
