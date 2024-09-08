@@ -23,46 +23,51 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome aqui" minimumFontSize="17" background="powersleep" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aQ1-Bf-ZDl">
-                                <rect key="frame" x="25" y="137.66666666666666" width="380" height="34"/>
+                                <rect key="frame" x="25" y="152.66666666666666" width="380" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" minimumFontSize="17" background="powersleep" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PQj-8f-lh8">
-                                <rect key="frame" x="25" y="196.66666666666666" width="380" height="34"/>
+                                <rect key="frame" x="25" y="211.66666666666666" width="380" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PwS-Bo-oqh">
-                                <rect key="frame" x="25" y="320.66666666666669" width="380" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuO-1l-f6y">
+                                <rect key="frame" x="155" y="335" width="120" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fgf-GK-kgG"/>
+                                    <constraint firstAttribute="width" constant="120" id="ftU-zo-qpV"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Enter">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tappetLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EyF-br-z33"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
-                            <constraint firstItem="PwS-Bo-oqh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="9e1-ao-sNI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PwS-Bo-oqh" secondAttribute="trailing" constant="25" id="K64-WS-42s"/>
+                            <constraint firstItem="XuO-1l-f6y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8nq-6Z-ADL"/>
+                            <constraint firstItem="XuO-1l-f6y" firstAttribute="top" secondItem="PQj-8f-lh8" secondAttribute="bottom" constant="89.329999999999998" id="HRs-Zh-Ssq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PQj-8f-lh8" secondAttribute="trailing" constant="25" id="LTZ-KQ-VkS"/>
-                            <constraint firstItem="aQ1-Bf-ZDl" firstAttribute="top" secondItem="kKp-ve-K1f" secondAttribute="bottom" constant="25" id="OQL-md-b4c"/>
-                            <constraint firstItem="PwS-Bo-oqh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Q8u-xJ-5xe"/>
                             <constraint firstItem="PQj-8f-lh8" firstAttribute="top" secondItem="aQ1-Bf-ZDl" secondAttribute="bottom" constant="25" id="RWE-SK-3ce"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PwS-Bo-oqh" secondAttribute="trailing" constant="25" id="UWZ-h8-3WE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aQ1-Bf-ZDl" secondAttribute="trailing" constant="25" id="W51-vK-uXO"/>
                             <constraint firstItem="kKp-ve-K1f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="WmE-Od-ugE"/>
+                            <constraint firstItem="aQ1-Bf-ZDl" firstAttribute="top" secondItem="kKp-ve-K1f" secondAttribute="bottom" constant="40" id="XUg-EG-aWA"/>
                             <constraint firstItem="aQ1-Bf-ZDl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="cTi-QO-2z3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aQ1-Bf-ZDl" secondAttribute="trailing" constant="25" id="eEU-hZ-3oU"/>
                             <constraint firstItem="kKp-ve-K1f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ewj-BG-bUi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PwS-Bo-oqh" secondAttribute="trailing" constant="25" id="kZm-HK-Ell"/>
-                            <constraint firstItem="PwS-Bo-oqh" firstAttribute="top" secondItem="PQj-8f-lh8" secondAttribute="bottom" constant="90" id="mIR-uQ-awb"/>
+                            <constraint firstItem="aQ1-Bf-ZDl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="h1b-m1-BnR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kKp-ve-K1f" secondAttribute="trailing" constant="25" id="qFj-oB-iWy"/>
                             <constraint firstItem="PQj-8f-lh8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="rAt-Yy-6T5"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonLoginButton" destination="PwS-Bo-oqh" id="5up-UH-qgm"/>
+                        <outlet property="enterButton" destination="XuO-1l-f6y" id="DSD-8K-3Zn"/>
                         <outlet property="loguinLabel" destination="kKp-ve-K1f" id="tCV-mh-RKu"/>
                         <outlet property="nameUserLabel" destination="aQ1-Bf-ZDl" id="0fo-bl-pGn"/>
                         <outlet property="passwordUserLabel" destination="PQj-8f-lh8" id="afm-PJ-Xmk"/>
@@ -70,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4476" y="-1288"/>
+            <point key="canvasLocation" x="-5051" y="-1353"/>
         </scene>
     </scenes>
     <resources>
