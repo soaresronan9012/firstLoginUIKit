@@ -47,6 +47,30 @@
                                     <action selector="tappetLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EyF-br-z33"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAp-b7-3lP">
+                                <rect key="frame" x="97" y="482" width="236" height="134"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQb-5P-GXh">
+                                        <rect key="frame" x="70.666666666666657" y="24" width="95" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="google-icon-logo-svgrepo-com" translatesAutoresizingMaskIntoConstraints="NO" id="jCF-bR-b9u">
+                                        <rect key="frame" x="71" y="78" width="33" height="36"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="apple-logo-svgrepo-com" translatesAutoresizingMaskIntoConstraints="NO" id="BeI-Dh-JGv">
+                                        <rect key="frame" x="131" y="78" width="41" height="36"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstItem="jCF-bR-b9u" firstAttribute="top" secondItem="WQb-5P-GXh" secondAttribute="bottom" constant="30" id="CqQ-9T-SeX"/>
+                                    <constraint firstItem="BeI-Dh-JGv" firstAttribute="leading" secondItem="jCF-bR-b9u" secondAttribute="trailing" constant="27" id="EVG-eg-wgP"/>
+                                    <constraint firstItem="WQb-5P-GXh" firstAttribute="centerX" secondItem="bAp-b7-3lP" secondAttribute="centerX" id="RLl-Ja-bgD"/>
+                                    <constraint firstItem="jCF-bR-b9u" firstAttribute="leading" secondItem="bAp-b7-3lP" secondAttribute="leading" constant="71" id="a1l-Zp-CHk"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -55,15 +79,19 @@
                             <constraint firstItem="XuO-1l-f6y" firstAttribute="top" secondItem="PQj-8f-lh8" secondAttribute="bottom" constant="89.329999999999998" id="HRs-Zh-Ssq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PQj-8f-lh8" secondAttribute="trailing" constant="25" id="LTZ-KQ-VkS"/>
                             <constraint firstItem="PQj-8f-lh8" firstAttribute="top" secondItem="aQ1-Bf-ZDl" secondAttribute="bottom" constant="25" id="RWE-SK-3ce"/>
+                            <constraint firstItem="bAp-b7-3lP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="RvZ-B2-Ybm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aQ1-Bf-ZDl" secondAttribute="trailing" constant="25" id="W51-vK-uXO"/>
                             <constraint firstItem="kKp-ve-K1f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="WmE-Od-ugE"/>
                             <constraint firstItem="aQ1-Bf-ZDl" firstAttribute="top" secondItem="kKp-ve-K1f" secondAttribute="bottom" constant="40" id="XUg-EG-aWA"/>
                             <constraint firstItem="aQ1-Bf-ZDl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="cTi-QO-2z3"/>
+                            <constraint firstItem="bAp-b7-3lP" firstAttribute="top" secondItem="XuO-1l-f6y" secondAttribute="bottom" constant="107" id="dPP-1T-cPA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bAp-b7-3lP" secondAttribute="trailing" constant="97" id="dQ9-sR-0lL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aQ1-Bf-ZDl" secondAttribute="trailing" constant="25" id="eEU-hZ-3oU"/>
                             <constraint firstItem="kKp-ve-K1f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ewj-BG-bUi"/>
                             <constraint firstItem="aQ1-Bf-ZDl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="h1b-m1-BnR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kKp-ve-K1f" secondAttribute="trailing" constant="25" id="qFj-oB-iWy"/>
                             <constraint firstItem="PQj-8f-lh8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="rAt-Yy-6T5"/>
+                            <constraint firstItem="bAp-b7-3lP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sbM-1Z-FFc"/>
                         </constraints>
                     </view>
                     <connections>
@@ -75,13 +103,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5051" y="-1353"/>
+            <point key="canvasLocation" x="-5051.1627906976746" y="-1353.2188841201717"/>
         </scene>
     </scenes>
     <resources>
+        <image name="apple-logo-svgrepo-com" width="800" height="800"/>
+        <image name="google-icon-logo-svgrepo-com" width="800" height="800"/>
         <image name="powersleep" catalog="system" width="125" height="128"/>
         <systemColor name="systemPurpleColor">
-            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
