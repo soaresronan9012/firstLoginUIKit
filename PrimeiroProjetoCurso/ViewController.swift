@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var enterButton: UIButton!
         
     
+    @IBOutlet weak var labelAcountLabel: UILabel!
+    @IBOutlet weak var appleAcountImage: UIImageView!
+    @IBOutlet weak var googleAcountImage: UIImageView!
     
     
     
@@ -31,6 +34,9 @@ class ViewController: UIViewController {
     @IBAction func tappetLoginButton(_ sender: UIButton) {
         
     }
+    
+    
+    
     
 }
 
